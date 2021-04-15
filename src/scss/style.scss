@@ -1,0 +1,61 @@
+$fontFamilty: "";
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
+
+html,
+body {
+  color: #000;
+  font-size: 14px;
+  &._lock {
+    overflow: hidden;
+  }
+  min-height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.contianer {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
